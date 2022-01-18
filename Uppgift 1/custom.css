@@ -36,14 +36,15 @@ body {
 
 .register-box .user-box {
   position: relative;
+  margin: 1.5rem 0;
 }
 
 .register-box .user-box input {
   width: 100%;
   padding: 10px 0;
-  font-size: 16px;
+  font-size: 15px;
   color: #fff;
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
   border: none;
   border-bottom: 1px solid #fff;
   outline: none;
@@ -54,11 +55,21 @@ body {
   top:0;
   left: 0;
   padding: 10px 0;
-  font-size: 16px;
+  font-size: 12px;
   color: #fff;
   pointer-events: none;
   transition: .5s;
 }
+
+.register-box .user-box .invalid-input {
+  margin-top: -1rem;
+  font-size: 0.9rem;
+  display: none;
+  width: 100%;
+  color: red;
+}
+
+
 
 .register-box .user-box input:focus ~ label,
 .register-box .user-box input:valid ~ label {
