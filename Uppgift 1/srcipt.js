@@ -1,11 +1,12 @@
 /*My variablers*/
+
 const form = document.querySelector('#regForm');
 const firstName = document.querySelector('#firstName');
 const lastName = document.querySelector('#lastName');
 const email = document.querySelector('#email');
 
 
-/*Validation for type=text input feilds */
+/*Validation for type=text input fields */
 
 const validateText = (input) => {
   if(input.value.trim() === '') { 
@@ -22,7 +23,7 @@ const validateText = (input) => {
   }
 }
 
-/*Validation for type=email input feilds */
+/*Validation for type=email input fields */
 
 
 const validateEmail = email => {
