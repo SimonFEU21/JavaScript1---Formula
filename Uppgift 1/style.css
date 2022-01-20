@@ -23,6 +23,7 @@ html, body {
   border: none;
   outline: none;
   text-transform: uppercase;
+  font-size: 15px;
   font-weight: 700;
   cursor: pointer;
 }
@@ -55,32 +56,32 @@ html, body {
 }
 
 .headline {
-  padding-bottom: 1rem;
+  padding-bottom: .5rem;
   color: rgb(7, 0, 0);
   text-align: center;
 }
 
-.form-content {
+.f-content {
   padding: 1.5rem;
 }
 
-.input-group{
+.user-box{
   margin-bottom: 1.5rem;
   position: relative;
 }
 
-.input-group .input-label,
-.input-group .form-control,
-.input-group .invalid-input {
+.user-box .input-label,
+.user-box .form-ctrl,
+.user-box .invalid-input {
   display: block;
   width: 100%;
 }
 
-.input-group .input-label {
+.user-box .input-label {
   margin-bottom: .5rem;
 }
 
-.input-group .form-control {
+.user-box .form-ctrl {
   padding: .5rem 0;
   width: 100%;
   font-size: 16px;
@@ -90,12 +91,12 @@ html, body {
   outline: none;
   background: transparent;
 }
-.input-group .form-control:focus {
+.user-box .form-ctrl:focus {
   outline: 1px solid #888888;
 }
 
-.input-group .invalid-input,
-.input-group-check .invalid-input {
+.user-box .invalid-input,
+.user-box .invalid-input {
   /* margin-top: .2rem; */
   color: #db1010;
   font-size: .9rem;
@@ -105,7 +106,7 @@ html, body {
 
 /*Om allting är fel eller något är fel så kommer stylingen*/
 
-.is-invalid .form-control {
+.is-invalid .form-ctrl {
   border: 1px solid #db1010;
   outline: 1px solid #db1010;
 }
@@ -116,7 +117,7 @@ html, body {
 
 /*Om allting är rätt eller något är rätt så kommer stylingen*/
 
-.is-valid .form-control {
+.is-valid .form-ctrl {
   border: 1px solid #14ac06;
   outline: 1px solid #14ac06;
 }

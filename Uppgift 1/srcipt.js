@@ -1,4 +1,4 @@
-/*My variablers*/
+/*My variables*/
 
 const form = document.querySelector('#regForm');
 const firstName = document.querySelector('#firstName');
@@ -6,7 +6,7 @@ const lastName = document.querySelector('#lastName');
 const email = document.querySelector('#email');
 
 
-/*Validation for type=text input fields */
+/*Validation for type = text input fields */
 
 const validateText = (input) => {
   if(input.value.trim() === '') { 
@@ -14,7 +14,7 @@ const validateText = (input) => {
     return false;
   }
   else if(input.value.trim().length < 2) {
-    setError(input, 'Name must be atleast 2 chars long')
+    setError(input, 'Name must be atleast 2 characters long')
     return false;
   }
   else {
@@ -23,8 +23,7 @@ const validateText = (input) => {
   }
 }
 
-/*Validation for type=email input fields */
-
+/*Validation for type = email input fields */
 
 const validateEmail = email => {
   let regEx = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
@@ -43,7 +42,7 @@ const validateEmail = email => {
   }
 }
 
-/* Changeing styles if user put incorrect information */
+/* Changeing styles if user put Incorrect information */
 
 const setError = (input, textMessage) => {
   const parent = input.parentElement;
@@ -53,7 +52,7 @@ const setError = (input, textMessage) => {
 }
 
 
-/* Changeing styles if user put correct information */
+/* Changeing styles if user put Correct information */
 
 const setSuccess = input => {
   const parent = input.parentElement;
