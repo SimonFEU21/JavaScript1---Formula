@@ -23,6 +23,7 @@ const validateText = (input) => {
   }
 }
 
+
 /*Validation for type = email input fields */
 
 const validateEmail = email => {
@@ -42,6 +43,7 @@ const validateEmail = email => {
   }
 }
 
+
 /* Changeing styles if user put Incorrect information */
 
 const setError = (input, textMessage) => {
@@ -60,7 +62,8 @@ const setSuccess = input => {
   parent.classList.add('is-valid');
 }
 
-/* Valides user inputs */
+
+/* Validates user inputs */
 
 const validate = input => {
   switch(input.type) {
@@ -70,6 +73,7 @@ const validate = input => {
       break;
   }
 }
+
 
 /* Store information to console log */
 
@@ -81,6 +85,7 @@ form.addEventListener('submit', e => {
   for(let i = 0; i < form.length; i++) {
     errors[i] = validate(form[i])
   }
+
   console.log(errors)
 
   if(!errors.includes(false)) {
