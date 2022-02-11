@@ -55,6 +55,23 @@ html, body {
   background-color: #f0eeee;
 }
 
+.userListWrapper {
+  padding: 1rem;
+  margin-left: 2rem;
+  min-width: 400px;
+  border-radius: 15px;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  background-color: #f0eeee;
+}
+
+.userListWrapper ul {
+  list-style: none;
+}
+
+.userListWrapper li {
+  padding-bottom: 1rem;
+}
+
 .headline {
   padding-bottom: .5rem;
   color: rgb(7, 0, 0);

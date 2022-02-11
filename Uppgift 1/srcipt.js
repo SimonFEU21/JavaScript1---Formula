@@ -4,6 +4,26 @@ const form = document.querySelector('#regForm');
 const firstName = document.querySelector('#firstName');
 const lastName = document.querySelector('#lastName');
 const email = document.querySelector('#email');
+const userList = document.querySelector('.userList')
+
+
+
+const users = []
+
+const addUser = (user) => {
+
+const li = document.createElement('li')
+userList.appendChild(li);
+
+const name = document.createElement('p')
+li.appendChild(name);
+
+const email = document.createElement('p')
+li.appendChild(email);
+
+name.innerText = `${user.firstName} ${user.lastName}`;
+email.innerText = user.email;
+}
 
 
 /*Validation for type = text input fields */
@@ -75,6 +95,8 @@ const validate = input => {
 }
 
 
+
+
 /* Store information to console log */
 
 form.addEventListener('submit', e => {
@@ -96,6 +118,12 @@ form.addEventListener('submit', e => {
       email : email.value
     }
     console.log(user);
+
+    users.push(user)
+    console.log(users);
+
+    addUser(user);
   }
 
 })
+
